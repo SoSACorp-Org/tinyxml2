@@ -647,6 +647,13 @@ bool XMLUtil::ToInt64(const char* str, int64_t* value)
 	return false;
 }
 
+const char* XMLDocument::GetErrorStr1() const {
+	return _errorStr1.GetStr();
+}
+
+const char* XMLDocument::GetErrorStr2() const {
+	return _errorStr2.GetStr();
+}
 
 char* XMLDocument::Identify( char* p, XMLNode** node )
 {
